@@ -34,12 +34,17 @@ namespace DynamicUserControl.ViewModels
 		/// </summary>
 		public MainWindowViewModel()
 		{
-			var c1 = new ControlViewModel(50, 50);
+			var c1 = new ControlViewModel(50.0, 50.0);
 			_ = c1.AddTo(Disposable);
 			ControlList.Add(c1);
-			var c2 = new ControlViewModel(50, 150);
+			// 上記3行を下記のように1行にもできる
+			//ControlList.Add(new ControlViewModel(50.0, 50.0).AddTo(Disposable));
+
+			var c2 = new ControlViewModel(50.0, 150.0);
 			_ = c2.AddTo(Disposable);
 			ControlList.Add(c2);
+			// 上記3行を下記のように1行にもできる
+			//ControlList.Add(new ControlViewModel(50.0, 150.0).AddTo(Disposable));
 
 			_ = ClosedCommand.Subscribe(Close).AddTo(Disposable);
 		}
