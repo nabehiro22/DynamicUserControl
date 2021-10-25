@@ -5,4 +5,4 @@ MainWindowViewModelで生成されたユーザーコントロールのインス�
 メインウインドウが閉じる時、MainWindowViewModelにあるCompositeDisposableがDispose()され、ユーザーコントロールが破棄される。<br>
 その時にユーザーコントロールのDispose()が呼び出されユーザーコントロールのReactiveCommand等が破棄される。<br>
 解説は  
-https://nabehirosoft.blogspot.com/2021/02/prismusercontrol.html
+https://www.nabehiro.net/2021/10/wpf-prism-dynamic-usercontrol.html
